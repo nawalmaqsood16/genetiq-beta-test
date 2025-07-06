@@ -1,0 +1,209 @@
+@use "@/App/Styles/_mixins" as mixins;
+
+.concerns-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.concerns-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+  }
+}
+
+.concerns-show-all {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  
+  &:hover {
+    background-color: var(--accent-light);
+  }
+}
+
+.concerns-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+// Keep original styles for backward compatibility
+.ConcernWidget-wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+	gap: 24px;
+	border-radius: 16px;
+	background: #fff;
+}
+
+.ConcernWidget-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ConcernWidget-tab-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ConcernWidget-tab {
+	display: flex;
+	padding: 4px 16px 4px 0;
+	align-items: center;
+	gap: 10px;
+	border-radius: 0px 0px 0px 0px;
+	color: #000;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+}
+
+.ConcernWidget-slope {
+	position: absolute;
+	right: -16px;
+	bottom: 0;
+}
+
+.ConcernWidget-more {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+}
+
+.ConcernWidget-more-text {
+	color: #3b8df5;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+	margin: 0;
+}
+
+.ConcernWidget-chevron-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ConcernWidget-chevron {
+	transition: transform 0.3s ease;
+}
+
+.rotate-chevron {
+	transform: rotate(180deg);
+}
+
+.ConcernWidget-content {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.ConcernWidget-cards-layout {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 100%;
+	transition: all 0.5s ease;
+}
+
+.ConcernWidget-concern-cards {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 100%;
+	height: auto;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease;
+}
+
+.ConcernWidget-concern-cards-visible {
+	max-height: 1000px;
+}
+
+.ConcernWidget-concern-cards-hidden {
+	max-height: 0;
+}
+
+.ConcernWidget-detail-cards {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 100%;
+	height: auto;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease;
+}
+
+.ConcernWidget-detail-cards-visible {
+	max-height: 1000px;
+}
+
+.ConcernWidget-detail-cards-hidden {
+	max-height: 0;
+}
+
+.ConcernWidget-reasons {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 100%;
+	height: auto;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease;
+}
+
+.ConcernWidget-reasons-visible {
+	max-height: 1000px;
+}
+
+.ConcernWidget-reasons-hidden {
+	max-height: 0;
+}
+
+.ConcernWidget-symptoms {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 100%;
+	height: auto;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease;
+}
+
+.ConcernWidget-symptoms-visible {
+	max-height: 1000px;
+}
+
+.ConcernWidget-symptoms-hidden {
+	max-height: 0;
+}

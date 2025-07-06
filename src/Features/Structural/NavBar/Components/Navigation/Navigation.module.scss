@@ -1,0 +1,66 @@
+.navigation-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	padding: 0 8px;
+	height: 100%;
+	position: relative;
+}
+
+.navigation-container button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	padding: 8px 16px;
+	height: 100%;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	cursor: pointer;
+	color: var(--text-secondary);
+	font-weight: 500;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.05);
+		border-color: transparent;
+	}
+
+	&.selected {
+		color: var(--accent-color);
+		border-bottom: 2px solid var(--accent-color);
+		background-color: var(--accent-light);
+		
+		svg path {
+			fill: var(--accent-color);
+		}
+	}
+}
+
+.icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon svg {
+	width: 20px;
+	height: 20px;
+}
+
+.icon svg path {
+	fill: var(--text-secondary);
+	transition: fill 0.3s ease;
+}
+
+.settingsWrapper {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 16px;
+}

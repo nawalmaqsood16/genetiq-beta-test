@@ -1,0 +1,68 @@
+/* Light Theme (default) */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f7fa;
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --text-secondary: rgba(0, 0, 0, 0.6);
+  --border-color: #e0e0e0;
+  --accent-color: #3b8df5;
+  --accent-light: #e6f2ff;
+  --error-color: #f44336;
+  --warning-color: #ff9800;
+  --success-color: #4caf50;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+  --button-bg: #1a1a1a;
+  --button-text: #ffffff;
+  --navbar-bg: #ffffff;
+  --scrollbar-track: #f0f0f0;
+  --scrollbar-thumb: rgba(52, 120, 246, 0.5);
+  --scrollbar-thumb-hover: rgba(20, 89, 219, 0.5);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --text-primary: rgba(255, 255, 255, 0.87);
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --border-color: #333333;
+  --accent-color: #3b8df5;
+  --accent-light: #1a365d;
+  --error-color: #e57373;
+  --warning-color: #ffb74d;
+  --success-color: #81c784;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --card-bg: #1e1e1e;
+  --input-bg: #2a2a2a;
+  --button-bg: #3b8df5;
+  --button-text: #ffffff;
+  --navbar-bg: #1a1a1a;
+  --scrollbar-track: #2a2a2a;
+  --scrollbar-thumb: rgba(52, 120, 246, 0.5);
+  --scrollbar-thumb-hover: rgba(20, 89, 219, 0.5);
+}
+
+/* Blue Theme */
+[data-theme="blue"] {
+  --bg-primary: #0a1929;
+  --bg-secondary: #0d2137;
+  --text-primary: rgba(255, 255, 255, 0.87);
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --border-color: #173a5e;
+  --accent-color: #3b8df5;
+  --accent-light: #1a365d;
+  --error-color: #e57373;
+  --warning-color: #ffb74d;
+  --success-color: #81c784;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --card-bg: #0d2137;
+  --input-bg: #132f4c;
+  --button-bg: #3b8df5;
+  --button-text: #ffffff;
+  --navbar-bg: #061422;
+  --scrollbar-track: #132f4c;
+  --scrollbar-thumb: rgba(52, 120, 246, 0.5);
+  --scrollbar-thumb-hover: rgba(20, 89, 219, 0.5);
+} 
